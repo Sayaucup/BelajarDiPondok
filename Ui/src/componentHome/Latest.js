@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { StyleSheet, Text, View } from "react-native";
-import img from './icon/Component.jpg'
+import img from '../icon/Component.jpg'
 
 import { SliderBox } from "react-native-image-slider-box";
 

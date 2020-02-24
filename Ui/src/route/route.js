@@ -3,13 +3,23 @@ import {createAppContainer} from 'react-navigation'
 import {createStackNavigator} from 'react-navigation-stack'
 import {createBottomTabNavigator} from 'react-navigation-tabs'
 
-import Home from '../screen/home'
-import Search from '../screen/search'
-import Cart from '../screen/cart'
-import Profile from '../screen/profile'
-import More from '../screen/more'
-import Latest from '../Latest'
-import Seeall from '../Seeall'
+import Home from '../tabs/home'
+import Search from '../tabs/search'
+import Cart from '../tabs/cart'
+import Profile from '../tabs/profile'
+import More from '../tabs/more'
+
+import Latest from '../componentHome/Latest'
+import Seeall from '../componentHome/Seeall'
+
+
+import Apparel from '../componentHome/category/Apparel'
+import Beauty from '../componentHome/category/Beauty'
+import Shoes from '../componentHome/category/Shoes'
+import Electronic from '../componentHome/category/Electronic'
+import Furniture from '../componentHome/category/Furniture'
+import Stationary from '../componentHome/category/Stationary'
+
 
 import Icon from 'react-native-vector-icons/AntDesign'
 import Iconn from 'react-native-vector-icons/Ionicons'
@@ -89,6 +99,42 @@ const App = createStackNavigator ({
     },
     Seeall:{
         screen:Seeall,
+        navigationOptions:{
+            header:null
+        }
+    },
+    Apparel:{
+        screen:Apparel,
+        navigationOptions:{
+            header:null
+        }
+    },
+    Beauty:{
+        screen:Beauty,
+        navigationOptions:{
+            header:null
+        }
+    },
+    Shoes:{
+        screen:Shoes,
+        navigationOptions:{
+            header:null
+        }
+    },
+    Electronic:{
+        screen:Electronic,
+        navigationOptions:{
+            header:null
+        }
+    },
+    Furniture:{
+        screen:Furniture,
+        navigationOptions:{
+            header:null
+        }
+    },
+    Stationary:{
+        screen:Stationary,
         navigationOptions:{
             header:null
         }
